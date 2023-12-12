@@ -3,6 +3,8 @@ terraform {
 }
 
 provider "aws" {
+  # MODIFY this line to look for 2.27.0 or greater
+  version = "~> 5.0"
 }
 
 module "server" {
